@@ -1,6 +1,6 @@
 import React from 'react';
-import { Pie , Radar} from 'react-chartjs-2';
-const PieChart = () => {
+import { Pie , Radar, Line} from 'react-chartjs-2';
+const barchart = () => {
   const data = {
     labels: ['Red', 'Blue', 'Yellow'],
     datasets: [
@@ -15,15 +15,14 @@ const PieChart = () => {
   // Chart options
   const options = {
     responsive: true,
-    maintainAspectRatio: true,  
+    maintainAspectRatio: true,
   };
 
   return (
-    <div style={{height:"250px"}}>
-      <h2>Sample Pie Chart</h2>
-      <Pie data={data} options={options} />
+    <div>
+      <Line data={data} options={options} />
     </div>
   );
 };
 
-export default PieChart;
+export default barchart;

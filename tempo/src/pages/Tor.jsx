@@ -2,6 +2,7 @@ import React from "react";
 // import { Pie } from "react-chartjs-2";
 import PieChart from "../charts/piechart";
 import Radarpie from "../charts/Radarpie";
+import BarChart from "../charts/barchart";
 function Tor() {
     return (
         <>
@@ -21,26 +22,26 @@ function Tor() {
                             <div className="Rated Power">Rated Power : <span>0</span></div>
                         </div>
                     </div>
-                    <div className="divlower shadow d-flex fdc">
-                        <div className="one d-flex">
-                            <div className="valuseCard">R Phase Voltage</div>
-                            <div className="valuseCard">Y Phase Voltage</div>
-                            <div className="valuseCard">B Phase Voltage</div>
+                    <div className="divlower shadow d-flex fdc gap-4">
+                        <div className="one d-flex gap-4">
+                            <div className="valuseCard shadow">R Phase Voltage</div>
+                            <div className="valuseCard shadow">Y Phase Voltage</div>
+                            <div className="valuseCard shadow">B Phase Voltage</div>
                         </div>
-                        <div className="two d-flex">
-                            <div className="valuseCard">R Phase Current</div>
-                            <div className="valuseCard">Y Phase Current</div>
-                            <div className="valuseCard">B Phase Current</div>
+                        <div className="two d-flex gap-4">
+                            <div className="valuseCard shadow">R Phase Current</div>
+                            <div className="valuseCard shadow">Y Phase Current</div>
+                            <div className="valuseCard shadow">B Phase Current</div>
                         </div>
-                        <div className="three d-flex">
-                            <div className="valuseCard">VTHD R Phase</div>
-                            <div className="valuseCard">VTHD Y Phase</div>
-                            <div className="valuseCard">VTHD B Phase</div>
+                        <div className="three d-flex gap-4">
+                            <div className="valuseCard shadow">VTHD R Phase</div>
+                            <div className="valuseCard shadow">VTHD Y Phase</div>
+                            <div className="valuseCard shadow">VTHD B Phase</div>
                         </div>
-                        <div className="four d-flex">
-                            <div className="valuseCard">CTHD R Phase</div>
-                            <div className="valuseCard">CTHD Y Phase</div>
-                            <div className="valuseCard">CTHD B Phase</div>
+                        <div className="four d-flex gap-4">
+                            <div className="valuseCard shadow">CTHD R Phase</div>
+                            <div className="valuseCard shadow">CTHD Y Phase</div>
+                            <div className="valuseCard shadow">CTHD B Phase</div>
                         </div>
                     </div>
                 </div>
@@ -55,7 +56,9 @@ function Tor() {
                         <div className="stdcard card">3</div>
                     </div>
                     <div className="secondRowcard d-flex sCard">
-                        <div className="EConsumption card">1</div>
+                        <div className="EConsumption card">
+                            <BarChart />
+                        </div>
                         <div className="alertCard card">2</div>
                     </div>
                 </div>
