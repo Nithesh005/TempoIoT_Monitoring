@@ -50,7 +50,7 @@ function Tor() {
                             <Radarpie />
                         </div>
                         <div className="stdcard card">
-                            {/* <PieChart /> */}
+                            <PieChart />
                         </div>
                         <div className="stdcard card">3</div>
                     </div>
