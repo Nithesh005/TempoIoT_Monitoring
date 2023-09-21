@@ -1762,3 +1762,28 @@ overflow: hidden;
 .Specification{
     color: #181c32!important;
 }
+.value-card{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 18px;
+    height: 10px;
+   
+}
+.value-card img{
+    height: 25px;
+}
+.value-card-1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    gap: 10px;
+}
+.value-card-2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+.value-card-2 H5{
+    color: #f1416c!important;
+}

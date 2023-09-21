@@ -4,6 +4,7 @@ import PieChart from "../charts/piechart";
 import Radarpie from "../charts/Radarpie";
 import BarChart from "../charts/barchart";
 import PowerImg from "../images/powerIcon.png";
+import EnergyRed from "../images/EnergyRed.png";
 function Tor() {
     return (
         <>
@@ -25,24 +26,133 @@ function Tor() {
                     </div>
                     <div className="divlower shadow d-flex fdc gap-4">
                         <div className="one d-flex gap-4">
-                            <div className="valuseCard shadow">R Phase Voltage</div>
-                            <div className="valuseCard shadow">Y Phase Voltage</div>
-                            <div className="valuseCard shadow">B Phase Voltage</div>
+                            <div className="valuseCard shadow">
+                                <div> R Phase Voltage</div>
+                                <div className="value-card">
+                                    <div className="value-card-1">
+                                        <img src={EnergyRed} alt="" />
+                                        <h5>236.97</h5></div>
+                                    <div className="value-card-2">
+                                        <h5>V</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="valuseCard shadow">
+                            <div>Y Phase Voltage </div>
+                                <div className="value-card">
+                                    <div className="value-card-1">
+                                        <img src={EnergyRed} alt="" />
+                                        <h5>236.97</h5></div>
+                                    <div className="value-card-2">
+                                        <h5>V</h5>
+                                    </div>
+                                </div></div>
+                            <div className="valuseCard shadow">
+                            <div>B Phase Voltage</div>
+                                <div className="value-card">
+                                    <div className="value-card-1">
+                                        <img src={EnergyRed} alt="" />
+                                        <h5>236.97</h5></div>
+                                    <div className="value-card-2">
+                                        <h5>V</h5>
+                                    </div>
+                                </div></div>
                         </div>
                         <div className="two d-flex gap-4">
-                            <div className="valuseCard shadow">R Phase Current</div>
-                            <div className="valuseCard shadow">Y Phase Current</div>
-                            <div className="valuseCard shadow">B Phase Current</div>
+                            <div className="valuseCard shadow">
+                            <div>R Phase Current</div>
+                                <div className="value-card">
+                                    <div className="value-card-1">
+                                        <img src={EnergyRed} alt="" />
+                                        <h5>236.97</h5></div>
+                                    <div className="value-card-2">
+                                        <h5>A</h5>
+                                    </div>
+                                </div></div>
+                            <div className="valuseCard shadow">
+                            <div> Y Phase Current</div>
+                                <div className="value-card">
+                                    <div className="value-card-1">
+                                        <img src={EnergyRed} alt="" />
+                                        <h5>236.97</h5></div>
+                                    <div className="value-card-2">
+                                        <h5>A</h5>
+                                    </div>
+                                </div></div>
+                            <div className="valuseCard shadow">
+                            <div> B Phase Current</div>
+                                <div className="value-card">
+                                    <div className="value-card-1">
+                                        <img src={EnergyRed} alt="" />
+                                        <h5>236.97</h5></div>
+                                    <div className="value-card-2">
+                                        <h5>A</h5>
+                                    </div>
+                                </div></div>
                         </div>
                         <div className="three d-flex gap-4">
-                            <div className="valuseCard shadow">VTHD R Phase</div>
-                            <div className="valuseCard shadow">VTHD Y Phase</div>
-                            <div className="valuseCard shadow">VTHD B Phase</div>
+                            <div className="valuseCard shadow">
+                            <div>VTHD R Phase</div>
+                                <div className="value-card">
+                                    <div className="value-card-1">
+                                        <img src={EnergyRed} alt="" />
+                                        <h5>236.97</h5></div>
+                                    <div className="value-card-2">
+                                        <h5>%</h5>
+                                    </div>
+                                </div></div>
+                            <div className="valuseCard shadow">
+                            <div>VTHD Y Phase</div>
+                                <div className="value-card">
+                                    <div className="value-card-1">
+                                        <img src={EnergyRed} alt="" />
+                                        <h5>236.97</h5></div>
+                                    <div className="value-card-2">
+                                        <h5>%</h5>
+                                    </div>
+                                </div></div>
+                            <div className="valuseCard shadow">
+                            <div> VTHD B Phase</div>
+                                <div className="value-card">
+                                    <div className="value-card-1">
+                                        <img src={EnergyRed} alt="" />
+                                        <h5>236.97</h5></div>
+                                    <div className="value-card-2">
+                                        <h5>%</h5>
+                                    </div>
+                                </div></div>
                         </div>
                         <div className="four d-flex gap-4">
-                            <div className="valuseCard shadow">CTHD R Phase</div>
-                            <div className="valuseCard shadow">CTHD Y Phase</div>
-                            <div className="valuseCard shadow">CTHD B Phase</div>
+                            <div className="valuseCard shadow">
+                            <div> CTHD R Phase</div>
+                                <div className="value-card">
+                                    <div className="value-card-1">
+                                        <img src={EnergyRed} alt="" />
+                                        <h5>236.97</h5></div>
+                                    <div className="value-card-2">
+                                        <h5>%</h5>
+                                    </div>
+                                </div></div>
+                            <div className="valuseCard shadow">
+                            <div>CTHD Y Phase</div>
+                                <div className="value-card">
+                                    <div className="value-card-1">
+                                        <img src={EnergyRed} alt="" />
+                                        <h5>236.97</h5></div>
+                                    <div className="value-card-2">
+                                        <h5>%</h5>
+                                    </div>
+                                </div></div>
+                            <div className="valuseCard shadow">
+                            <div> CTHD B Phase</div>
+                                <div className="value-card">
+                                    <div className="value-card-1">
+                                        <img src={EnergyRed} alt="" />
+                                        <h5>236.97</h5></div>
+                                    <div className="value-card-2">
+                                        <h5>%</h5>
+                                    </div>
+                                </div></div>
                         </div>
                     </div>
                 </div>
