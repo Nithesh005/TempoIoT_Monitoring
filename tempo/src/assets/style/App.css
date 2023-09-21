@@ -1701,3 +1701,15 @@ input[type="checkbox"] {
 .secondRowcard .EConsumption{
     flex-grow: 1;
 }
+.valuseCard{
+    flex-grow: 1;
+}
+.one ,.two,.three,.four{
+    flex-grow: 1;
+}
+.Specification span{
+    color: #f1416c!important;
+}
+.Specification{
+    color: #181c32!important;
+}
