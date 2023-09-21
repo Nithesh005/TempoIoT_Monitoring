@@ -1617,7 +1617,7 @@ input[type="checkbox"] {
     padding: 3px;
 }
 
-.log_event_reset{
+.log_event_reset {
     width: 100px;
     border: 1px solid red;
     color: red;
@@ -1625,7 +1625,7 @@ input[type="checkbox"] {
     padding: 3px;
 }
 
-.log_event_fmupdate{
+.log_event_fmupdate {
     width: 100px;
     border: 1px solid blueviolet;
     color: blueviolet;
@@ -1634,13 +1634,14 @@ input[type="checkbox"] {
 }
 
 /* data log */
-.data_log_body{
+.data_log_body {
     min-height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.data_log_export{
+
+.data_log_export {
     width: 90px;
     text-align: center;
     height: 30px;
@@ -1649,51 +1650,95 @@ input[type="checkbox"] {
     background-color: rgb(193, 195, 198);
     cursor: context-menu;
 }
+
 /* tor */
-.sb{
+.sb {
     justify-content: space-between;
 }
-.sa{
+
+.sa {
     justify-content: space-around;
 }
-.div100{
+
+.div100 {
     height: 100%;
     width: 100%;
     gap: 1rem;
 }
-.div40{
+
+.div40 {
     width: 40%;
     gap: 1rem;
 }
-.divUpper{
+
+.divUpper {
     height: 30%;
     border: 0.1px solid rgba(128, 128, 128, 0.295);
     border-radius: 7px;
 }
-.divlower{
+
+.divlower {
     height: 100%;
     border: 0.1px solid rgba(128, 128, 128, 0.295);
     border-radius: 7px;
 }
-.div60{
+
+.div60 {
     width: 60%;
     gap: 1rem;
 }
-.fdc{
+
+.fdc {
     flex-direction: column;
 }
-.sCard{
+
+.sCard {
     height: 50%;
     gap: 1rem;
     /* background-color: red; */
 }
-.stdcard{
+
+.stdcard {
     /* width: 200px; */
     flex-grow: 1;
 }
-.secondRowcard .alertCard{
+
+.secondRowcard .alertCard {
     width: 300px;
 }
-.secondRowcard .EConsumption{
+
+.secondRowcard .EConsumption {
     flex-grow: 1;
+}
+
+.power-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.power-box-1 {
+    font-size: 17px;
+    position: relative;
+    top: 38px;
+    left: 130px;
+    font-weight: bolder !important;
+}
+
+.power-box-1 h2 {
+    color: #f1416c !important;
+}
+
+.alert-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    top: 10px;
+}
+.Alert-box-1 {
+    font-size: 17px;
+    position: relative;
+    top: 38px;
+    left: 90px;
+    font-weight: bolder !important;
 }

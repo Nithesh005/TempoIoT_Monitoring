@@ -25,19 +25,28 @@ function Tor() {
                     <div className="firstRowcard d-flex sCard">
                         <div className="stdcard card">1</div>
                         <div className="stdcard card">2</div>
-                        <div className="stdcard card">
+                        <div className="stdcard card power-card">
                             <div className="power-box">
-                                <h3>Power</h3>
+                                <h5>Power</h5>
                                 <span><img src={PowerImg} alt="" /></span>
                             </div>
-                            <div>
-                                h3
+                            <div className="power-box-1">
+                                <h1>0.35</h1>
+                                <h2>Kw</h2>
                             </div>
                         </div>
                     </div>
                     <div className="secondRowcard d-flex sCard">
                         <div className="EConsumption card">1</div>
-                        <div className="alertCard card">2</div>
+                        <div className="alertCard card">
+                            <div className="alert-box">
+                                <h5>Alerts</h5>
+                                <button type="button" class="btn btn-dark all-button">All()</button>
+                            </div>
+                            <div className="Alert-box-1">
+                                <h2>No Alerts</h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
