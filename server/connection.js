@@ -17,7 +17,7 @@ const User_db_connection = new Pool({
     user: 'postgres',
     host: '127.0.0.1',
     database: 'tempo_roof',
-    password: '123',
+    password: '12345',
     port: 5432,
 })
 
@@ -34,7 +34,7 @@ app.get('/source_db/:dbname', async (req, res) => {
         user: 'postgres',
         host: '127.0.0.1',
         database: result,
-        password: '123',
+        password: '12345',
         port: 5432,
     });
     if (pool) {

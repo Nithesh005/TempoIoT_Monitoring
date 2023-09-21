@@ -1,4 +1,5 @@
 import React from "react";
+import PowerImg from "../images/powerIcon.png";
 function Tor() {
     return (
         <>
@@ -24,7 +25,15 @@ function Tor() {
                     <div className="firstRowcard d-flex sCard">
                         <div className="stdcard card">1</div>
                         <div className="stdcard card">2</div>
-                        <div className="stdcard card">3</div>
+                        <div className="stdcard card">
+                            <div className="power-box">
+                                <h3>Power</h3>
+                                <span><img src={PowerImg} alt="" /></span>
+                            </div>
+                            <div>
+                                h3
+                            </div>
+                        </div>
                     </div>
                     <div className="secondRowcard d-flex sCard">
                         <div className="EConsumption card">1</div>
