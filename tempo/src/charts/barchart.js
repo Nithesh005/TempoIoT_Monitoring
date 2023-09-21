@@ -19,7 +19,7 @@ const barchart = () => {
   };
 
   return (
-    <div>
+    <div style={{height:"250px"}}>
       <Line data={data} options={options} />
     </div>
   );
