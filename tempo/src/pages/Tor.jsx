@@ -11,16 +11,16 @@ function Tor() {
             <div className="div100 d-flex">
                 <div className="div40 d-flex fdc">
                     <div className="divUpper shadow">
-                        <div className="Machine d-flex sa">
-                            <div className="Specification">Machine Specification</div>
+                        <div className="Machine d-flex sb">
+                            <div className="Specification specMachine">Machine Specification</div>
                             <div className="sts_machine">Status : On</div>
                         </div>
                         <div className="data fdc Specification">
-                            <div className="divice">Device : <span>hello</span></div>
-                            <div className="Manufacturer">Manufacturer : <span>Quantanics</span></div>
-                            <div className="Device Code">Device Code : <span>30580001-1</span></div>
-                            <div className="Model">Model : <span>2022</span></div>
-                            <div className="Rated Power">Rated Power : <span>0</span></div>
+                            <div className="divice">Device : <span className="answers">hello</span></div>
+                            <div className="Manufacturer">Manufacturer : <span className="answers">Quantanics</span></div>
+                            <div className="Device Code">Device Code : <span className="answers">30580001-1</span></div>
+                            <div className="Model">Model : <span className="answers">2022</span></div>
+                            <div className="Rated Power">Rated Power : <span className="answers">0</span></div>
                         </div>
                     </div>
                     <div className="divlower shadow d-flex fdc gap-4">
@@ -60,8 +60,8 @@ function Tor() {
                                 <span><img src={PowerImg} alt="" /></span>
                             </div>
                             <div className="power-box-1">
-                                <h1>0.35</h1>
-                                <h2>Kw</h2>
+                                <h1 className="insidetext">0.35</h1>
+                                <h2 className="insidetext">Kw</h2>
                             </div>
                         </div>
                     </div>
@@ -74,8 +74,8 @@ function Tor() {
                                 <h5>Alerts</h5>
                                 <button type="button" class="btn btn-dark all-button">All()</button>
                             </div>
-                            <div className="Alert-box-1">
-                                <h2>No Alerts</h2>
+                            <div className="Alert-box-1 flex">
+                                <h2 className="alerts">No Alerts</h2>
                             </div>
                         </div>
                     </div>

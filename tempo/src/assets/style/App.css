@@ -1659,12 +1659,19 @@ input[type="checkbox"] {
 .sa {
     justify-content: space-around;
 }
-.div100{
+
+.div100 {
     padding: 0.5rem;
     height: 85vh;
     width: 100%;
     gap: 1rem;
     overflow: auto;
+}
+.specMachine{
+    font-weight: 700;
+}
+.answers{
+    font-weight: 600;
 }
 
 .div40 {
@@ -1673,12 +1680,14 @@ input[type="checkbox"] {
 }
 
 .divUpper {
+    padding: 1rem;
     height: 30%;
     border: 0.1px solid rgba(128, 128, 128, 0.295);
     border-radius: 7px;
 }
 
 .divlower {
+    padding: 1rem;
     height: 100%;
     border: 0.1px solid rgba(128, 128, 128, 0.295);
     border-radius: 7px;
@@ -1724,7 +1733,7 @@ input[type="checkbox"] {
     font-size: 17px;
     position: relative;
     top: 38px;
-    left: 130px;
+    /* left: 130px; */
     font-weight: bolder !important;
 }
 
@@ -1738,22 +1747,59 @@ input[type="checkbox"] {
     padding: 0.5rem;
     top: 10px;
 }
+
 .Alert-box-1 {
     font-size: 17px;
     position: relative;
     top: 38px;
-    left: 90px;
+
+    /* left: 90px; */
     font-weight: bolder !important;
 }
-.valuseCard{
+
+.alerts {
+    /* background-color: red; */
+    padding-left: 3rem;
+}
+
+.valuseCard {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border-radius: 7px;
+    border: 1px solid rgba(128, 128, 128, 0.495);
+}
+
+.one,
+.two,
+.three,
+.four {
     flex-grow: 1;
 }
-.one ,.two,.three,.four{
-    flex-grow: 1;
+
+.Specification span {
+    color: #f1416c !important;
 }
-.Specification span{
-    color: #f1416c!important;
+
+.Specification {
+    color: #181c32 !important;
 }
-.Specification{
-    color: #181c32!important;
+
+.data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two columns */
+    grid-template-rows: repeat(3, 1fr);
+    /* Three rows */
+    gap: 16px;
+    /* Gap between grid items */
+}
+
+/* Style for individual grid items */
+.divice,
+.Manufacturer,
+.Device.Code,
+.Model,
+.Rated.Power {
+    display: flex;
+    align-items: center;
 }
