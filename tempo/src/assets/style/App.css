@@ -1657,9 +1657,11 @@ input[type="checkbox"] {
     justify-content: space-around;
 }
 .div100{
-    height: 100%;
+    padding: 0.5rem;
+    height: 85vh;
     width: 100%;
     gap: 1rem;
+    overflow: auto;
 }
 .div40{
     width: 40%;
@@ -1690,6 +1692,8 @@ input[type="checkbox"] {
 .stdcard{
     /* width: 200px; */
     flex-grow: 1;
+    resize: horizontal;
+
 }
 .secondRowcard .alertCard{
     width: 300px;

@@ -18,7 +18,28 @@ function Tor() {
                             <div className="Rated Power">Rated Power</div>
                         </div>
                     </div>
-                    <div className="divlower shadow">lower</div>
+                    <div className="divlower shadow">
+                        <div className="one">
+                            <div className="valuseCard">R Phase Voltage</div>
+                            <div className="valuseCard">Y Phase Voltage</div>
+                            <div className="valuseCard">B Phase Voltage</div>
+                        </div>
+                        <div className="two">
+                            <div className="valuseCard">R Phase Current</div>
+                            <div className="valuseCard">Y Phase Current</div>
+                            <div className="valuseCard">B Phase Current</div>
+                        </div>
+                        <div className="three">
+                            <div className="valuseCard">VTHD R Phase</div>
+                            <div className="valuseCard">VTHD Y Phase</div>
+                            <div className="valuseCard">VTHD B Phase</div>
+                        </div>
+                        <div className="four">
+                            <div className="valuseCard">CTHD R Phase</div>
+                            <div className="valuseCard">CTHD Y Phase</div>
+                            <div className="valuseCard">CTHD B Phase</div>
+                        </div>
+                    </div>
                 </div>
                 <div className="div60 d-flex fdc">
                     <div className="firstRowcard d-flex sCard">
