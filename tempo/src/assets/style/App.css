@@ -1649,3 +1649,51 @@ input[type="checkbox"] {
     background-color: rgb(193, 195, 198);
     cursor: context-menu;
 }
+/* tor */
+.sb{
+    justify-content: space-between;
+}
+.sa{
+    justify-content: space-around;
+}
+.div100{
+    height: 100%;
+    width: 100%;
+    gap: 1rem;
+}
+.div40{
+    width: 40%;
+    gap: 1rem;
+}
+.divUpper{
+    height: 30%;
+    border: 0.1px solid rgba(128, 128, 128, 0.295);
+    border-radius: 7px;
+}
+.divlower{
+    height: 100%;
+    border: 0.1px solid rgba(128, 128, 128, 0.295);
+    border-radius: 7px;
+}
+.div60{
+    width: 60%;
+    gap: 1rem;
+}
+.fdc{
+    flex-direction: column;
+}
+.sCard{
+    height: 50%;
+    gap: 1rem;
+    /* background-color: red; */
+}
+.stdcard{
+    /* width: 200px; */
+    flex-grow: 1;
+}
+.secondRowcard .alertCard{
+    width: 300px;
+}
+.secondRowcard .EConsumption{
+    flex-grow: 1;
+}

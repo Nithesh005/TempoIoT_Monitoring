@@ -277,11 +277,11 @@ const Dashboard = () => {
                             </button>
                             {isOpen2 && (
                                 <div class="dashboard_dropdown-menu dropdown_menu dropdown-colors">
-                                    <div className='device_dropdown' onClick={() => handleOptionClick2("All")}>
+                                    {/* <div className='device_dropdown' onClick={() => handleOptionClick2("All")}>
                                         <div className="div_sts">
                                             All
                                         </div>
-                                    </div>
+                                    </div> */}
                                     {parameter.map((data, index) => (
                                         <div className='device_scroll' key={index}>
                                             <div>

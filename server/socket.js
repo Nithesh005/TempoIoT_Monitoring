@@ -47,6 +47,7 @@ mongoose
             return acc;
           }, {});
           //emit the initial data
+          console.log("hai");
           socket.emit('message', formattedData);
         })
         .catch((error) => {

@@ -63,6 +63,13 @@ const Sidebar = ({ children, give_auth, handleLogout }) => {
                         { url: '/Real_Data', text: 'Real Data' },
                     ],
                 },
+                {
+                    icon: <FaRegChartBar />,
+                    head: 'Tor Websites',
+                    links: [
+                        { url: '/tor', text: 'tor' }
+                    ],
+                },
             ],
         },
         RI002: {

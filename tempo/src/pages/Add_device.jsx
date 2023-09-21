@@ -155,7 +155,8 @@ const Add_device = () => {
     function handletopicname(event) {
         const value = event.target.value;
         settopicname(value)
-        const isValidtopicname = /^[0-9a-zA-Z]+$/.test(value)
+        // const isValidtopicname = /^[0-9a-zA-Z]+$/.test(value)
+        const isValidtopicname = /^[0-9a-zA-Z/\\]+$/.test(value);
         if (!isValidtopicname) {
             settopicnameerror("*Enter valid topicname")
         } else {
@@ -219,7 +220,7 @@ const Add_device = () => {
     const handleClick = async () => {
 
         //conditions to validate
-        const isValidclientid = /^[0-9]+$/.test(clientid)
+        const isValidclientid = /^[0-9]+$/.test(clientid);
         const isValiddevicename = /^[a-zA-Z0-9]+$/.test(devicename)
         const isValiddevicemodel = /^[a-zA-Z0-9]+$/.test(devicemodel)
         // const isValidmacaddress = /^[0-9a-zA-Z]{2}([-:_])[0-9a-zA-Z]{2}(\1[0-9a-zA-Z]{2}){4}$/.test(devicemacaddress)
@@ -227,8 +228,10 @@ const Add_device = () => {
         const isValidclientname = /^[a-zA-Z0-9]+$/.test(clientname)
         const isValidhost = /^[0-9a-zA-Z./,:\\-]+$/.test(host)
         const isValidusername = /^[a-zA-Z0-9]+$/.test(username)
-        const isValidtopicname = /^[0-9a-zA-Z]+$/.test(topicname)
+        const isValidtopicname = /^[0-9a-zA-Z/\\]+$/.test(topicname)
+        // const isValidtopicname = /^[0-9a-zA-Z]+$/.test(topicname)
         const isValidpassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]).{8,}$/.test(password);
+        // console.log(isValidtopicname);
 
 
         //parameter and datatype adding
@@ -247,7 +250,7 @@ const Add_device = () => {
 
         //check if valid or not
         if (!isValidclientid || !isValiddevicename || !isValiddevicemodel || !isValidfirmwareversion || !isValidclientname || !isValidhost || !isValidusername || !isValidpassword || !isValidtopicname) {
-            alert("not valid")
+            alert("not valid -:" ,isValidclientid)
         }
         else {
             const body = { clientid, devicename, devicemodel, devicemacaddress, firmwareversion, clientname, host, username, password, topicname, concatenatedValues, checking }

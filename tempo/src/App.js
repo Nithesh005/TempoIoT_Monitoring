@@ -40,7 +40,7 @@ import Firmware from './Upgradation/Firmware';
 //log maintenance
 import Events from './Log Maintenance/Events';
 import Real_Data from './Log Maintenance/Real_Data';
-
+import Tor from './pages/Tor';
 var storedData;
 
 const App = () => {
@@ -61,6 +61,7 @@ const App = () => {
         { path: '/Device_Connection', element: <Modbus_Master /> },
         { path: '/Real_Data', element: <Real_Data /> },
         { path: '/Firmware', element:<Firmware/>},
+        { path: '/tor', element:<Tor/>},
 
         { path: '/Device/Add_device', element: <Add_device /> },
         { path: '/Site/Add_site', element: <Add_site /> },

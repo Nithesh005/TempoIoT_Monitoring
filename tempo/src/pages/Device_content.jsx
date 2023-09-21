@@ -484,7 +484,7 @@ const Device_content = () => {
                                 <div className="col-head" key={index}>{data.device_name}</div>
                                 <div className="col-head" key={index}>{data.device_model}</div>
                                 <div className="col-head" key={index}>{data.last_updated_on}</div>
-                                <div className="col-head">ritchard</div>
+                                <div className="col-head">Quantanics</div>
 
                                 <div className="col-head display-flex">
                                     <FontAwesomeIcon icon={faDiamond} style={{ color: data.device_status === 1 ? 'green' : 'red', paddingTop: '7px' }} size="xs" />
