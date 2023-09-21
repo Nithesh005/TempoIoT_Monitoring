@@ -219,7 +219,8 @@ const App = () => {
             <>
               {sitevalue ? (<>
                 <TopNavbar site={site} apphandlesite={Apphandlesite} />
-                <Sidebar give_auth={userType} handleLogout={handleLogout}>
+                {window.location.href !=='http://localhost:3001/tor' ? (
+                  <Sidebar give_auth={userType} handleLogout={handleLogout}>
                   <Routes>
                     {userSidebarConfig[userType].routes.map((route, index) => (
                       (route.show === undefined || route.show) && (
@@ -228,6 +229,14 @@ const App = () => {
                     ))}
                   </Routes>
                 </Sidebar>
+                ):(
+                  // window.location.reload();
+                  // <div>hi</div>
+                  <Routes>
+                    <Route path='/Tor' element={<Tor />}></Route>
+                  </Routes>
+                )}
+                
               </>) : (<>
                 <TopNavbar site={site} apphandlesite={Apphandlesite} />
                 <Sidebar give_auth={userType} handleLogout={handleLogout}>

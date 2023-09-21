@@ -1659,11 +1659,12 @@ input[type="checkbox"] {
 .sa {
     justify-content: space-around;
 }
-
-.div100 {
-    height: 100%;
+.div100{
+    padding: 0.5rem;
+    height: 85vh;
     width: 100%;
     gap: 1rem;
+    overflow: auto;
 }
 
 .div40 {
@@ -1701,6 +1702,8 @@ input[type="checkbox"] {
 .stdcard {
     /* width: 200px; */
     flex-grow: 1;
+    resize: horizontal;
+
 }
 
 .secondRowcard .alertCard {
@@ -1741,4 +1744,16 @@ input[type="checkbox"] {
     top: 38px;
     left: 90px;
     font-weight: bolder !important;
+}
+.valuseCard{
+    flex-grow: 1;
+}
+.one ,.two,.three,.four{
+    flex-grow: 1;
+}
+.Specification span{
+    color: #f1416c!important;
+}
+.Specification{
+    color: #181c32!important;
 }
