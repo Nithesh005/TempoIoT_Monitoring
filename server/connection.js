@@ -141,7 +141,7 @@ app.get('/user_management', async (req, res) => {
 // add_user
 app.post('/add_user', async (req, res) => {
 
-
+console.log("hello");
     const { first_name, last_name, roleid, contact, Designation, site_id, email, selectedOption_site, selectedOption_user, selectedOption_device, selectedOption_dashboard } = req.body
 
 
